@@ -1,0 +1,189 @@
+body{
+	background-color: rgb(106, 99, 93);
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+/* Header section */
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+
+#header .brand{
+    color: #7ff2ff;
+}
+
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	padding: 0 50px;
+	background-color: rgb(46, 39, 39);
+}
+/* End Header section */
+
+/* Start Weather section */
+
+.weather{
+    background-color: #35343a;
+    width: 410px;
+    height: 310px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    border-radius: 10%;
+}
+
+.weather-list{
+    margin-left: 15px;
+    margin-right: 20px;
+    font-size: 1.1rem;
+    color: #96d9c2;
+    background-color: #4d4b54;
+    padding: 8px;
+    padding-left: 30px;
+    border-radius: 20px;
+}
+
+#getWeather{
+    margin-left: 26px;
+    font-size: 1.2rem;
+    margin-top: 0px;
+    background-color: rgb(24 142 93);
+    padding: 10px;
+    width: 205px;
+    border-radius: 30px;
+    color: rgb(8 17 17);
+    transition: 0.6s;
+}
+
+#getWeather:hover{
+    font-size: 1.3rem;
+    background-color: rgb(29, 183, 119);
+    color: rgb(21, 45, 45);
+}
+
+/* End Weather section */
+
+/* Footer */
+footer{
+    position: relative;
+    right: 10px;
+    top: 600px;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icon,
+footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li{
+    list-style: none;
+}
+
+footer .social_icon li a
+{
+    font-size: 2em;
+    color:#fff;
+    margin:0 10px;
+    display: inline-block;
+    transition: 0.5;
+}
+
+footer .social_icon li a:hover{
+    transform: scale(2.5);
+	transition: .3s ease transform;
+}
+
+footer .menu li a{
+    font-size: 1.2em;
+    color:#fff;
+    margin:0 10px;
+    display: inline-block;
+    transition: 0.5;
+    text-decoration: none;
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color:#fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size:1.1em;
+}
+
+footer .wave{
+    position:absolute;
+    top:-100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("./img/wave.png");
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 2;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 1;
+    opacity: 0.5;
+    bottom: 0;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 2;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 1;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px ;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02{
+    0%{
+        background-position-x: 0px ;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+/* End Footer */
