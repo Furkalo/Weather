@@ -1,6 +1,6 @@
 body{
-	background-color: rgb(106, 99, 93);
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+	background-color: rgb(222 175 135);
+    font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';
 }
 
 /* Header section */
@@ -24,14 +24,14 @@ body{
 	width: 100%;
 	height: 100%;
 	padding: 0 50px;
-	background-color: rgb(46, 39, 39);
+	background-color: rgb(100 123 219);
 }
 /* End Header section */
 
 /* Start Weather section */
 
 .weather{
-    background-color: #35343a;
+    background-color: #706992;
     width: 410px;
     height: 310px;
     position: absolute;
@@ -45,7 +45,7 @@ body{
     margin-right: 20px;
     font-size: 1.1rem;
     color: #96d9c2;
-    background-color: #4d4b54;
+    background-color: #5438b8;
     padding: 8px;
     padding-left: 30px;
     border-radius: 20px;
